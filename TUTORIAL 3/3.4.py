@@ -1,10 +1,10 @@
 import tkinter as tk
-def bc():
+def bh():
     far = float(f.get())
     cel = (far - 32) * 5/9
     c.delete(0, tk.END)
     c.insert(0, f"{cel:.2f}")
-def df():
+def bj():
     cel = float(c.get())
     far = (cel * 9/5) + 32
     f.delete(0, tk.END)
@@ -19,7 +19,6 @@ f.insert(0, "32")
 c = tk.Entry(root)
 c.grid(row=1, column=1)
 c.insert(0, "0.0")
-tk.Button(root, text="-->", command=fc).grid(row=2, column=0)
-tk.Button(root, text="<--", command=cf).grid(row=2, column=1)
+tk.Button(root, text="-->", command=bh).grid(row=2, column=0)   
+tk.Button(root, text="<--", command=bj).grid(row=2, column=1)
 root.mainloop()
-  
